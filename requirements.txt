@@ -1,4 +1,4 @@
-python-3.8.10
+python-3.7.10
 Flask==1.1.2 
 Flask-Cors==3.0.8 
 Flask-RESTful==0.3.7
