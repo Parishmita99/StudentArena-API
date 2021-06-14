@@ -11,6 +11,7 @@ pandas==1.2.4
 numpy==1.20.3
 pickleshare==0.7.5
 requests==2.23.0 
+scikit-learn==0.24.2
 requests-file==1.4.3 
 scipy==1.6.3 
 wcwidth==0.1.7 
