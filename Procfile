@@ -1,2 +1,2 @@
-web:gunicorn app:app --max-requests 2
+web: gunicorn --bind 0.0.0.0:$PORT main-api:app
 heroku ps
