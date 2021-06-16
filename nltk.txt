@@ -1,4 +1,5 @@
 wordnet
+pros_cons
 porter_test
 reuters
 punkt
