@@ -3,7 +3,7 @@ import pandas as pd
 
 nltk.download('punkt')
 nltk.download('stopwords')
-df = pd.read_csv("dice_com-job_us_sample.csv")
+df = pd.read_csv("dataset/dice_com-job_us_sample.csv.zip")
 
 
 def identify_tokens(row):
