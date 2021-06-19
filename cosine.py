@@ -32,6 +32,6 @@ def recommend(jobs_user_likes):
   recommendation_data['Company'] = job_company
   return recommendation_data
 
-jobs_user_likes ="java architect - denver, co - fulltime"
+jobs_user_likes ="automation test engineer"
 recommendation_data= recommend(jobs_user_likes)
 print(recommendation_data)
