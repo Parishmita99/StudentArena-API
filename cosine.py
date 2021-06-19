@@ -30,7 +30,7 @@ def recommend(jobs_user_likes):
   recommendation_data['Job title'] = job_title
   recommendation_data['Job Description'] = job_desc
   recommendation_data['Company'] = job_company
-  return recommendation_data
+  return recommendation_data.to_dict('records')
 
 jobs_user_likes ="information security engineer"
 recommendation_data= recommend(jobs_user_likes)
