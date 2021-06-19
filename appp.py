@@ -7,7 +7,7 @@ CORS(app)
         
 @app.route('/', methods=['GET'])
 def recommend_jobs():
-    res = cosineword.recommend(request.args.get("java architect - denver, co - fulltime"))
+    res = cosine.recommend(request.args.get("java architect - denver, co - fulltime"))
     return jsonify(res)
 
 if __name__=='__main__':
