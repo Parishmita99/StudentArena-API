@@ -1,6 +1,8 @@
 from flask import Flask,request,jsonify
 from flask_cors import CORS
 import cosine
+import logging
+
 
 app = Flask(__name__)
 CORS(app) 
@@ -12,3 +14,5 @@ def recommend_jobs():
 
 if __name__=='__main__':
     app.run(port = 5000, debug = True)
+    app.logger.addHandler(logging.StreamHandler(sys.stdout))
+    app.logger.setLevel(logging.ERROR)
