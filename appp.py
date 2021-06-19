@@ -7,9 +7,9 @@ import logging
 app = Flask(__name__)
 CORS(app) 
         
-@app.route('/', methods=['GET'])
+@app.route('/jobs', methods=['GET'])
 def recommend_jobs():
-    res = cosine.recommend(request.args.get("java architect - denver, co - fulltime"))
+    res = cosine.recommend(request.args.get('title'))
     return jsonify(res)
 
 if __name__=='__main__':
