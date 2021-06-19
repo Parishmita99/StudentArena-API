@@ -3,7 +3,7 @@ import numpy as np
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-df=pd.read_csv("dataset/Preprocessed.csv.zip",nrows=10000)
+df=pd.read_csv("dataset/Preprocessed.csv.zip",nrows=7000)
 cv = CountVectorizer()
 df.fillna(" ")
 
