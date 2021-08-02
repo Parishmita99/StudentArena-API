@@ -11,7 +11,7 @@ count_matrix = cv.fit_transform(df['combined'])
 cosine_sim = cosine_similarity(count_matrix)
 
 def get_index_from_job_type(title):
-    return df[df['jobtitle']==title]['Job_Id'].values[0]
+    return df[df['jobtitle']==title]['Job id'].values[0]
 
 def recommend(jobs_user_likes):
     if jobs_user_likes not in df['jobtitle'].unique():
