@@ -23,7 +23,7 @@ def recommend(jobs_user_likes):
         sorted_similar_jobs = sorted_similar_jobs[1:21]
     
         job_indices = [i[0] for i in sorted_similar_jobs]
-        job_id = df['Job_id'].iloc[job_indices]
+        job_id = df['Job id'].iloc[job_indices]
         job_title = df['jobtitle'].iloc[job_indices]
         job_desc = df['jobdescription'].iloc[job_indices]
         job_company = df['company'].iloc[job_indices]
