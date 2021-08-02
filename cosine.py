@@ -27,7 +27,7 @@ def recommend(jobs_user_likes):
         job_title = df['jobtitle'].iloc[job_indices]
         job_desc = df['jobdescription'].iloc[job_indices]
         job_company = df['company'].iloc[job_indices]
-        recommendation_data = pd.DataFrame(columns=['Job_Id','Job_title','Job_Description','Company'])
+        recommendation_data = pd.DataFrame(columns=['Job_id','Job_title','Job_Description','Company'])
 
         recommendation_data['Job_Id'] = job_id
         recommendation_data['Job_title'] = job_title
