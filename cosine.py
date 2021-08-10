@@ -33,7 +33,7 @@ def recommend(jobs_user_likes):
         recommendation_data['Job_title'] = job_title
         recommendation_data['Job_Description'] = job_desc
         recommendation_data['Company'] = job_company
-        return jsonify(recommendation_data.to_dict('records'))
+        return recommendation_data.to_dict('records')
 
 jobs_user_likes ="information security engineer"
 recommendation_data= recommend(jobs_user_likes)
